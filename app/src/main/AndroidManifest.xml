@@ -10,11 +10,11 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Course_project">
         <activity
-            android:name=".ShowDetailActivity"
+            android:name=".SupportActivity"
             android:exported="false" />
-        <activity
-            android:name=".MainActivity"
-            android:exported="false" />
+        <activity android:name=".CartListActivity" />
+        <activity android:name=".ShowDetailActivity" />
+        <activity android:name=".MainActivity" />
         <activity
             android:name=".SplashActivity"
             android:exported="true">

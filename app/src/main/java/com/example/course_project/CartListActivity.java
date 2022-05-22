@@ -40,6 +40,7 @@ public class CartListActivity extends AppCompatActivity {
     private void bottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
         LinearLayout homeBtn = findViewById(R.id.homeBtn);
+        LinearLayout supportBtn = findViewById(R.id.supportBtn);
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,10 +54,16 @@ public class CartListActivity extends AppCompatActivity {
                 startActivity(new Intent(CartListActivity.this, MainActivity.class));
             }
         });
+        supportBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(CartListActivity.this, SupportActivity.class));
+            }
+        });
     }
 
     private void initView() {
-        recyclerViewList = findViewById(R.id.recyclerView);
+        recyclerViewList = findViewById(R.id.rv_category);
         totalFeeTxt = findViewById(R.id.totalFeeTxt);
         taxTxt = findViewById(R.id.taxTxt);
         deliveryTxt = findViewById(R.id.deliveryTxt);

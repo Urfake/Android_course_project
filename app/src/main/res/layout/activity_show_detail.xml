@@ -41,7 +41,7 @@
                 android:id="@+id/picfood"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                app:srcCompat="@drawable/pizza" />
+                app:srcCompat="@drawable/wood" />
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -94,7 +94,7 @@
         android:textStyle="bold"
         android:elevation="3dp"
         android:layout_margin="16dp"
-        android:background="@drawable/orange_button"
+        android:background="@drawable/start_button"
         android:gravity="center"
         android:textSize="23sp"
         android:textColor="#ffffff"

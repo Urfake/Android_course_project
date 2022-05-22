@@ -44,11 +44,11 @@ public class CartListAdapter extends RecyclerView.Adapter<CartListAdapter.ViewHo
         holder.totalEachItem.setText(String.valueOf(Math.round((materialDomains.get(position).getNumberInCart() * materialDomains.get(position).getFee()) * 100) / 100));
         holder.num.setText(String.valueOf(materialDomains.get(position).getNumberInCart()));
 
-        int drawableReourceId = holder.itemView.getContext().getResources().getIdentifier(materialDomains.get(position).getPic()
+        int drawableResourceId = holder.itemView.getContext().getResources().getIdentifier(materialDomains.get(position).getPic()
                 , "drawable", holder.itemView.getContext().getPackageName());
 
         Glide.with(holder.itemView.getContext())
-                .load(drawableReourceId)
+                .load(drawableResourceId)
                 .into(holder.pic);
 
         holder.plusItem.setOnClickListener(new View.OnClickListener() {

@@ -45,7 +45,7 @@ public class PopularAdapter extends RecyclerView.Adapter<PopularAdapter.ViewHold
             @Override
             public void onClick(View view) {
                 Intent intent = new Intent(holder.itemView.getContext(), ShowDetailActivity.class);
-                intent.putExtra("object", String.valueOf(popularMaterial.get(position)));
+                intent.putExtra("object", popularMaterial.get(position));
                 holder.itemView.getContext().startActivity(intent);
             }
         });

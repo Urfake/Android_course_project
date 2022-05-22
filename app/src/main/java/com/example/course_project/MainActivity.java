@@ -34,6 +34,7 @@ public class MainActivity extends AppCompatActivity {
     private void bottomNavigation() {
         FloatingActionButton floatingActionButton = findViewById(R.id.cartBtn);
         LinearLayout homeBtn = findViewById(R.id.homeBtn);
+        LinearLayout supportBtn = findViewById(R.id.supportBtn);
 
         floatingActionButton.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -47,11 +48,18 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(new Intent(MainActivity.this, MainActivity.class));
             }
         });
+
+        supportBtn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                startActivity(new Intent(MainActivity.this, SupportActivity.class));
+            }
+        });
     }
 
     private void recyclerViewCategory() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        recyclerViewCategoryList = findViewById(R.id.recyclerView);
+        recyclerViewCategoryList = findViewById(R.id.rv_category);
         recyclerViewCategoryList.setLayoutManager(linearLayoutManager);
 
         ArrayList<CategoryDomain> category = new ArrayList<>();
@@ -67,13 +75,13 @@ public class MainActivity extends AppCompatActivity {
 
     private void recyclerViewPopular() {
         LinearLayoutManager linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
-        recyclerViewPopularList = findViewById(R.id.recyclerView2);
+        recyclerViewPopularList = findViewById(R.id.rv_popular);
         recyclerViewPopularList.setLayoutManager(linearLayoutManager);
 
         ArrayList<MaterialDomain> foodList = new ArrayList<>();
-        foodList.add(new MaterialDomain("Pepperoni pizza", "pizza1", "slices pepperoni,mozzerella cheese,fresh oregano, ground black pepper,pizza sauce", 9.76));
-        foodList.add(new MaterialDomain("Cheese Burger", "burger", "beef, Gouda Cheese, Special Sauce, Lettuce, tomato", 8.79));
-        foodList.add(new MaterialDomain("Vegetable pizza", "pizza2", "olive oil, Vegetable oil, pitted kalamata, cherry tomatoes, fresh oregano, basil", 8.5));
+        foodList.add(new MaterialDomain("Pepperoni pizza", "wood", "slices pepperoni,mozzerella cheese,fresh oregano, ground black pepper,pizza sauce", 9.76));
+        foodList.add(new MaterialDomain("Cheese Burger", "wood", "beef, Gouda Cheese, Special Sauce, Lettuce, tomato", 8.79));
+        foodList.add(new MaterialDomain("Vegetable pizza", "wood", "olive oil, Vegetable oil, pitted kalamata, cherry tomatoes, fresh oregano, basil", 8.5));
 
         adapter2 = new PopularAdapter(foodList);
         recyclerViewPopularList.setAdapter(adapter2);

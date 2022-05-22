@@ -1,6 +1,8 @@
 package com.example.course_project.Domains;
 
-public class MaterialDomain {
+import java.io.Serializable;
+
+public class MaterialDomain implements Serializable {
 
     private String title;
     private String pic;
