@@ -1,4 +1,4 @@
-package com.example.course_project;
+package com.example.course_project.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -10,6 +10,7 @@ import android.widget.TextView;
 import com.bumptech.glide.Glide;
 import com.example.course_project.Domains.MaterialDomain;
 import com.example.course_project.Helper.ManagementCart;
+import com.example.course_project.R;
 
 public class ShowDetailActivity extends AppCompatActivity {
     private TextView addToCartBtn;

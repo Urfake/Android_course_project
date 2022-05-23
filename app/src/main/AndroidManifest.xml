@@ -10,13 +10,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Course_project">
         <activity
-            android:name=".SupportActivity"
-            android:exported="false" />
-        <activity android:name=".CartListActivity" />
-        <activity android:name=".ShowDetailActivity" />
-        <activity android:name=".MainActivity" />
-        <activity
-            android:name=".SplashActivity"
+            android:name=".Activities.SplashActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -24,6 +18,14 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Activities.SupportActivity"
+            android:exported="false" />
+        <activity android:name=".Activities.CartListActivity" />
+        <activity android:name=".Activities.ShowDetailActivity" />
+        <activity android:name=".Activities.MainActivity"
+            android:noHistory="true"/>
+
     </application>
 
 </manifest>

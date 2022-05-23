@@ -1,4 +1,4 @@
-package com.example.course_project;
+package com.example.course_project.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.LinearLayoutManager;
@@ -13,6 +13,7 @@ import com.example.course_project.Adapters.CategoryAdapter;
 import com.example.course_project.Adapters.PopularAdapter;
 import com.example.course_project.Domains.CategoryDomain;
 import com.example.course_project.Domains.MaterialDomain;
+import com.example.course_project.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 import java.util.ArrayList;
@@ -26,9 +27,13 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+
+
+
         recyclerViewCategory();
         recyclerViewPopular();
         bottomNavigation();
+
     }
 
     private void bottomNavigation() {

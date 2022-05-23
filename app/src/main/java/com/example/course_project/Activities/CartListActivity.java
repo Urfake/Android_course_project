@@ -1,4 +1,4 @@
-package com.example.course_project;
+package com.example.course_project.Activities;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import com.example.course_project.Adapters.CartListAdapter;
 import com.example.course_project.Helper.ManagementCart;
 import com.example.course_project.Interface.ChangeNumberItemsListener;
+import com.example.course_project.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class CartListActivity extends AppCompatActivity {

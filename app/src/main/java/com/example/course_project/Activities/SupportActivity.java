@@ -1,4 +1,4 @@
-package com.example.course_project;
+package com.example.course_project.Activities;
 
 import androidx.appcompat.app.AppCompatActivity;
 
@@ -12,6 +12,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.course_project.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class SupportActivity extends AppCompatActivity {
