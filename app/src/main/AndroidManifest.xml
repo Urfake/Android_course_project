@@ -10,6 +10,18 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Course_project">
         <activity
+            android:name=".Activities.DeliveryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.CardActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.MoneyActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Activities.NatureActivity"
+            android:exported="false" />
+        <activity
             android:name=".Activities.SplashActivity"
             android:exported="true">
             <intent-filter>
@@ -21,11 +33,11 @@
         <activity
             android:name=".Activities.SupportActivity"
             android:exported="false" />
-        <activity android:name=".Activities.CartListActivity" />
+        <activity
+            android:name=".Activities.CartListActivity"
+            android:parentActivityName=".Activities.MainActivity" />
         <activity android:name=".Activities.ShowDetailActivity" />
-        <activity android:name=".Activities.MainActivity"
-            android:noHistory="true"/>
-
+        <activity android:name=".Activities.MainActivity" />
     </application>
 
 </manifest>

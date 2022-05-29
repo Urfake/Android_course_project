@@ -9,28 +9,10 @@
     <ImageView
         android:id="@+id/splash"
         android:layout_width="match_parent"
-        android:layout_height="690dp"
+        android:layout_height="match_parent"
         android:src="@drawable/splash"
-        tools:ignore="MissingConstraints" />
-
-    <Button
-        android:id="@+id/startBtn"
-        android:layout_width="wrap_content"
-        android:layout_height="60dp"
-        android:layout_below="@+id/splash"
-        android:layout_alignParentEnd="true"
-        android:layout_alignParentStart="true"
-        android:layout_marginTop="-50dp"
-        android:layout_marginEnd="70dp"
-        android:layout_marginStart="70dp"
-        android:textAlignment="center"
-        android:background="@drawable/start_button"
-        android:text="Начать"
-        android:textSize="36sp"
-        android:textStyle="bold"
-        android:textColor="@color/white"
-        tools:ignore="MissingConstraints" />
-
+        tools:ignore="MissingConstraints"
+        android:layout_marginTop="-42dp"/>
 
 
 </RelativeLayout>

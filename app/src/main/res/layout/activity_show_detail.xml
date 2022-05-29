@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Activity.ShowDetailActivity">
+    tools:context=".Activities.ShowDetailActivity">
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -90,7 +90,7 @@
         android:id="@+id/addToCartBtn"
         android:layout_width="0dp"
         android:layout_height="50dp"
-        android:text="Add to Cart"
+        android:text="Добавить в корзину"
         android:textStyle="bold"
         android:elevation="3dp"
         android:layout_margin="16dp"
